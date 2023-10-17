@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="./css/header.css">
 
     <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://kit.fontawesome.com/08fb58a9a5.js" crossorigin="anonymous"></script>
+
     <script src="./js/scripts.js" crossorigin="anonymous"></script>
 </head>
 
@@ -25,7 +27,7 @@
                 <div>
                     <a href="#"><span class="fa fa-solid fa-circle-half-stroke"></span></a>
                     <a href="#"><span class="fa-solid fa-language"></span></a>     
-                    <a href="#"><span class="fa-solid fa-x"></span></a>
+                    <a href="#" onclick=hideSidebar()><span id="close-sidebar" class="fa-solid fa-x"></span></a>
                 </div>
             </li>
 
@@ -43,13 +45,9 @@
             <li><a href="#">Tech stack</a></li>
             <li><a href="#">Tech stack</a></li>
 
-            <li>
-                <div>
-                    <a href="#"><span class="fa fa-solid fa-circle-half-stroke"></span></a>
-                    <a href="#"><span class="fa-solid fa-language"></span></a>     
-                    <a href="#"><span class="fa-solid fa-bars"></span></a>
-                </div>
-            </li>
+            <li><a href="#"><span class="fa fa-solid fa-circle-half-stroke"></span></a></li>
+            <li><a href="#"><span class="fa-solid fa-language"></span></a></li>
+            <li><a href="#" onclick=showSidebar()><span id="open-sidebar" class="fa-solid fa-bars"></span></a> </li>  
         </ul>
     </nav>
 

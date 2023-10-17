@@ -1,3 +1,6 @@
+/*
+    NAVBAR 
+*/
 nav {
     background-color: beige;
     box-shadow: 3px rgba(0, 0, 0, 0.1);
@@ -24,11 +27,12 @@ nav a{
     color: black;
 }
 
-nav div{
+nav div {
     height: 100%;
 
     text-decoration: none;
     display: flex;
+    flex-direction: row;
     align-items: center;
     color: black;
 }
@@ -38,14 +42,17 @@ nav a:hover{
     background-color: aliceblue;
 }
 
-nav li:first-child{
+nav li:nth-child(5){
     margin-right: auto;
 }
 
-nav li:last-child{
+nav li:nth-last-child(3){
     margin-left: auto;
 }
 
+/*
+    SIDEBAR
+*/
 .sidebar {
     position: fixed;
     top: 0;
@@ -64,11 +71,14 @@ nav li:last-child{
     justify-content: flex-start;
 }
 
-.sidebar div {
+.sidebar div a {
+    height: 100%;
+    padding: 0 10px;
+    text-decoration: none;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content:center;
+    color: black;
+    justify-content: center;
 }
 
 .sidebar li{
