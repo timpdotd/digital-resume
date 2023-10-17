@@ -42,12 +42,8 @@ nav a:hover{
     background-color: aliceblue;
 }
 
-nav li:nth-child(5){
+nav li:first-child{
     margin-right: auto;
-}
-
-nav li:nth-last-child(3){
-    margin-left: auto;
 }
 
 /*
@@ -58,7 +54,7 @@ nav li:nth-last-child(3){
     top: 0;
     right: 0;
     height: 100vh;
-    width: 259px;
+    width: 0;
     z-index: 999;
 
     background-color: rgba(255, 255, 255, 0.365);
@@ -69,6 +65,8 @@ nav li:nth-last-child(3){
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+
+    transition: 0.5s;
 }
 
 .sidebar div a {
@@ -87,4 +85,10 @@ nav li:nth-last-child(3){
 
 .sidebar a{
     width: 100%;
+}
+
+@media (max-width: 1000px){
+    .sidebar {
+        width: 100px;
+    }
 }
