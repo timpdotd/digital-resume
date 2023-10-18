@@ -38,11 +38,6 @@ nav div {
     color: black;
 }
 
-
-nav a:hover{
-    background-color: aliceblue;
-}
-
 nav li:first-child{
     margin-right: auto;
 }
