@@ -62,11 +62,12 @@ nav li:first-child{
     align-items: flex-start;
     justify-content: flex-start;
 
-    transition: 0.5s;
+    transition: 0.75s;
 }
 
-.sidebar div a {
+.sidebar .sidebar-icons a {
     height: 100%;
+    width: 100%;
     padding: 0 10px;
     text-decoration: none;
     display: flex;
@@ -79,8 +80,12 @@ nav li:first-child{
     width: 100%;
 }
 
-.sidebar a{
-    width: 100%;
+.sidebar a {
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #open-sidebar {
