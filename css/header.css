@@ -92,6 +92,9 @@ nav li:first-child{
     display: none;
 }
 
+/*
+    MEDIA
+*/
 @media (max-width: 1000px){
     .hide-on-medium-dev {
         display: none;
