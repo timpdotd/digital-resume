@@ -93,7 +93,7 @@ nav li:first-child{
 }
 
 @media (max-width: 1000px){
-    .hide-on-mobile {
+    .hide-on-medium-dev {
         display: none;
     }
 
@@ -107,6 +107,9 @@ nav li:first-child{
 }
 
 @media (max-width: 400px){
+    .hide-on-small-dev {
+        display: none;
+    }
     nav a {
         padding: 0 8px;
     }
