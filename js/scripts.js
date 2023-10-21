@@ -13,3 +13,8 @@ function hideSidebar() {
     const sidebar = document.querySelector(".sidebar");
     sidebar.style.width = "0";
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const currentYear = new Date().getFullYear(); // Get the current year
+    document.getElementById("copyright-year").textContent = currentYear;
+});
