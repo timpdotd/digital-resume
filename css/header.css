@@ -108,7 +108,7 @@ nav li:first-child{
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
     .hide-on-small-dev {
         display: none;
     }
