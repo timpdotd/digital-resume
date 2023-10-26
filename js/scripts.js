@@ -24,3 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentYear = new Date().getFullYear(); // Get the current year
     document.getElementById("copyright-year").textContent = currentYear;
 });
+
+/*
+    TEST
+*/
+function test() {
+    alert("TEST: seems like it works");
+}
+
+function changeMode(){
+    test();
+}
