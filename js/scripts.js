@@ -22,7 +22,7 @@ function hideSidebar() {
 */
 document.addEventListener("DOMContentLoaded", function () {
     const currentYear = new Date().getFullYear(); // Get the current year
-    document.getElementById("copyright-year").textContent = currentYear;
+    document.querySelector(".copyright-year").textContent = currentYear;
 });
 
 /*
