@@ -9,10 +9,6 @@
 /*
     MAIN STYLE
 */
-.dark-mode {
-    color: var(--secondary-color);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -35,15 +31,14 @@ body {
 main {
     min-height: 100vh;
 }
-/*
-    HEADER AND FOOTER
-*/
 
 /*
-    NAVBAR 
+    HEADER 
 */
+
+/* Navbar */
 nav {
-    background-color: transparent;
+    background-color: beige;
     box-shadow: 3px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
@@ -83,9 +78,7 @@ nav li:first-child{
     margin-right: auto;
 }
 
-/*
-    SIDEBAR
-*/
+/* Sidebar */
 .sidebar {
     position: fixed;
     top: 0;
@@ -106,16 +99,11 @@ nav li:first-child{
     transition: 0.75s;
 }
 
-.sidebar .sidebar-icons a {
-    height: 100%;
-    width: 100%;
-    padding: 0 10px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+.sidebar li:first-child{
     justify-content: flex-start;
 }
 
+.sidebar .sidebar-icons a,
 .sidebar .sidebar-social a {
     height: 100%;
     width: 100%;
@@ -123,7 +111,7 @@ nav li:first-child{
     text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .sidebar li{
@@ -135,7 +123,6 @@ nav li:first-child{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 #open-sidebar {
@@ -143,31 +130,8 @@ nav li:first-child{
 }
 
 /*
-    MEDIA
+    FOOTER
 */
-@media (max-width: 1000px){
-    .hide-on-medium-dev {
-        display: none;
-    }
-
-    #open-sidebar {
-        display: block;
-    }
-    
-    nav a {
-        padding: 0 15px;
-    }
-}
-
-@media (max-width: 450px){
-    .hide-on-small-dev {
-        display: none;
-    }
-    nav a {
-        padding: 0 8px;
-    }
-}
-
 footer {
     background-color:bisque;
     padding: 1rem 0;
@@ -184,7 +148,7 @@ footer ul {
 }
 
 footer ul li {
-    padding: 0.5em
+    padding: 1em;
 }
 
 footer ul a {
@@ -194,4 +158,33 @@ footer ul a {
 
 footer .social a{
     margin: 0 0.5rem;
+}
+
+/*
+    MEDIA
+*/
+
+/* Medium devices */
+@media (max-width: 1000px){
+    .hide-on-medium-dev {
+        display: none;
+    }
+
+    #open-sidebar {
+        display: block;
+    }
+    
+    nav a {
+        padding: 0 15px;
+    }
+}
+
+/* Small devices */
+@media (max-width: 450px){
+    .hide-on-small-dev {
+        display: none;
+    }
+    nav a {
+        padding: 0 8px;
+    }
 }
