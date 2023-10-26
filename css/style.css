@@ -99,10 +99,6 @@ nav li:first-child{
     transition: 0.75s;
 }
 
-.sidebar li:first-child{
-    justify-content: flex-start;
-}
-
 .sidebar .sidebar-icons a,
 .sidebar .sidebar-social a {
     height: 100%;
@@ -116,6 +112,8 @@ nav li:first-child{
 
 .sidebar li{
     width: 100%;
+    text-align: center;
+    height: 10%;
 }
 
 .sidebar a {
