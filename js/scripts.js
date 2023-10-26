@@ -1,3 +1,6 @@
+/*
+    HIDE/SHOW SIDEBAR
+*/
 function showSidebar() {
     const sidebar = document.querySelector(".sidebar");
     sidebar.style.display = 'flex';
@@ -14,6 +17,9 @@ function hideSidebar() {
     sidebar.style.width = "0";
 }
 
+/*
+    AUTOMATIC UPDATE OF COPYRIGHT YEAR
+*/
 document.addEventListener("DOMContentLoaded", function () {
     const currentYear = new Date().getFullYear(); // Get the current year
     document.getElementById("copyright-year").textContent = currentYear;
