@@ -22,8 +22,13 @@ function hideSidebar() {
 */
 document.addEventListener("DOMContentLoaded", function () {
     const currentYear = new Date().getFullYear(); // Get the current year
-    document.querySelector(".copyright-year").textContent = currentYear;
+    const copyrightYearElements = document.querySelectorAll(".copyright-year");
+
+    copyrightYearElements.forEach(function (element) {
+        element.textContent = currentYear;
+    });
 });
+
 
 /*
     TEST

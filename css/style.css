@@ -158,6 +158,10 @@ footer .social a{
     margin: 0 0.5rem;
 }
 
+.copyright-year {
+    height: 5%;
+    color: gray;
+}
 /*
     MEDIA
 */
