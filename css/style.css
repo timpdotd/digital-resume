@@ -94,7 +94,7 @@ nav li:first-child{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
 
     transition: 0.75s;
 }
