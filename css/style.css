@@ -82,6 +82,7 @@ nav li:first-child{
 
 /* Sidebar */
 .sidebar {
+    margin-left: 10%;
     position: fixed;
     top: 0;
     right: 0;
