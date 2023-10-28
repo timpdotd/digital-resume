@@ -12,7 +12,8 @@
 * {
     margin: 0;
     padding: 0;
-
+    line-height: 1.5em;
+    box-sizing: border-box;
     color: var(--primary-color);
 }
 
@@ -23,6 +24,7 @@ html {
 body {
     min-height: 100vh;
     font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
 
     background-color:floralwhite;
 
@@ -30,15 +32,23 @@ body {
 
 main {
     min-height: 100vh;
-    padding-top: 10vh;
+    max-width: 800px;
+    padding: 2rem;
+    padding-bottom: 1rem !important;
     margin: 0 auto;
 }
 
 section {
-    margin: auto;
-    width: 75%;
-    padding: 1rem;
+    padding: 1rem 0;
 }
+
+#intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4em;
+}
+
 
 /*
     HEADER 
@@ -93,7 +103,11 @@ footer .social a{
 }
 
 /* Small devices */
-@media (max-width: 450px){
+@media (max-width: 600px){
+    #intro {
+        flex-direction: column;
+    }
+
     .hide-on-small-dev {
         display: none;
     }
