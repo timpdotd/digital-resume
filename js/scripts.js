@@ -28,15 +28,3 @@ document.addEventListener("DOMContentLoaded", function () {
         element.textContent = currentYear;
     });
 });
-
-
-/*
-    TEST
-*/
-function test() {
-    alert("TEST: seems like it works");
-}
-
-function changeMode(){
-    test();
-}

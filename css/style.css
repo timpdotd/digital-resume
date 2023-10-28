@@ -42,6 +42,25 @@ section {
     padding: 1rem 0;
 }
 
+h1 {
+    font-size: 40px;
+}
+
+p, span, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+
+li{
+    line-height: 1.9em;
+}
+
 #intro {
     display: flex;
     flex-direction: row;
