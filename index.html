@@ -26,41 +26,16 @@
 
 <body>
     <header>
+        <!--FIX HEADER-->
         <nav>
-            <ul class="sidebar">
-                <li>
-                    <div class="sidebar-icons">
-                        <a href="#" onclick="changeMode()"><span class="fa-solid fa-circle-half-stroke"></span></a>
-                        <a href="#" onclick="test()"><span class="fa-solid fa-language"></span></a>     
-                        <a href="#" onclick=hideSidebar()><span id="close-sidebar" class="fa-x"></span></a>
-                    </div>
-                </li>
-    
-                <li><a href="#tech-stack-title">Tech stack</a></li>
-                <li><a href="#education-title">Education</a></li>
-                <li><a href="#career-title">Career</a></li>
-                <li><a href="#about-me-title">About me</a></li>
-
-                <li>
-                    <div class="sidebar-social">
-                        <a href="#"><span class="fa-brands fa-github fa-xl"></span></a>
-                        <a href="#"><span class="fa-brands fa-linkedin fa-xl"></span></a>
-                    </div>
-                </li>
-
-                <li>
-                    <span class="copyright"><span class="copyright-year"></span> &copy; Timperi Davide</span>
-                </li>
-    
-            </ul>
             <ul class="navbar">
                 <li><a href="#">D</a></li>
-    
-                <li class="hide-on-medium-dev"><a href="#">Tech stack</a></li>
-                <li class="hide-on-medium-dev"><a href="#">Tech stack</a></li>
-                <li class="hide-on-medium-dev"><a href="#">Tech stack</a></li>
-                <li class="hide-on-medium-dev"><a href="#">Tech stack</a></li>
-    
+
+                <li class="hide-on-medium-dev"><a href="#tech-stack-title">Tech stack</a></li>
+                <li class="hide-on-medium-dev"><a href="#career-title">Career</a></li>
+                <li class="hide-on-medium-dev"><a href="#education-title">Education</a></li>
+                <li class="hide-on-medium-dev"><a href="#about-me-title">About me</a></li>
+
                 <li class="hide-on-small-dev"><a href="#" onclick="changeMode()"><span class="fa-solid fa-circle-half-stroke"></span></a></li>
                 <li class="hide-on-small-dev"><a href="#" onclick="test()"><span class="fa-solid fa-language fa-sm"></span></a></li>
                 <li id="open-sidebar" onclick=showSidebar() class="hide-on-small-dev"><a href="#"><span class="fa-solid fa-bars"></span></a> </li>  
@@ -69,18 +44,36 @@
     </header>
    
     <main>
-        <h2 id="tech-stack-title">Tech stack</h2>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, illo unde numquam tempora porro facilis dolores animi fugit natus vel cumque culpa vitae minus asperiores perspiciatis distinctio dolor dolore provident!</h2>
-        <h2 id="education-title">Education</h2>
-        <h2 id="career-title">Career</h2>
-        <h2 id="about-me-title">About me</h2>
+        <!--Tech stack section-->
+        <section id="tech-stack">
+            <h2 id="tech-stack-title">Tech stack</h2>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, illo unde numquam tempora porro facilis dolores animi fugit natus vel cumque culpa vitae minus asperiores perspiciatis distinctio dolor dolore provident!</h2>
+        </section>
+
+        <!--Career section-->
+        <section id="career">
+            <h2 id="career-title">Career</h2>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, illo unde numquam tempora porro facilis dolores animi fugit natus vel cumque culpa vitae minus asperiores perspiciatis distinctio dolor dolore provident!</h2>
+        </section>
+
+        <!--Education section-->
+        <section id="education">
+            <h2 id="education-title">Education</h2>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, illo unde numquam tempora porro facilis dolores animi fugit natus vel cumque culpa vitae minus asperiores perspiciatis distinctio dolor dolore provident!</h2>
+        </section>
+
+        <!--About me section-->
+        <section id="about-me">
+            <h2 id="about-me-title">About me</h2>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, illo unde numquam tempora porro facilis dolores animi fugit natus vel cumque culpa vitae minus asperiores perspiciatis distinctio dolor dolore provident!</h2>
+        </section>  
     </main>
 
     <footer>
         <ul>
             <li><a href="#tech-stack-title">Tech stack</a></li>
-            <li><a href="#education-title">Education</a></li>
             <li><a href="#career-title">Career</a></li>
+            <li><a href="#education-title">Education</a></li>
             <li><a href="#about-me-title">About me</a></li>
             <li>
                 <div class="social">
