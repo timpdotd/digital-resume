@@ -6,9 +6,7 @@
     /* Other custom properties for style.css */
 }
 
-/*
-    MAIN STYLE
-*/
+/* MAIN STYLE */
 * {
     margin: 0;
     padding: 0;
@@ -68,6 +66,15 @@ li{
     line-height: 1.9em;
 }
 
+hr {
+    height: 1px;
+    color: #ed1d61;
+    background: #ed1d61;
+    font-size: 0;
+    border: 0;
+}
+
+/* INTRO SECTION */
 #intro {
     display: flex;
     flex-direction: row;
@@ -82,6 +89,7 @@ li{
     border-radius: 50%;
 }
 
+/* TECH STACK */
 #tech-stack-skills {
     display: flex;
     flex-direction: row;
@@ -91,19 +99,23 @@ li{
 
 .tech-stack-card {
     border: 1px solid red;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 0.5em 1em;
     align-items: center;
 }
 
-/*
-    HEADER 
-*/
+/* GENERAL CONTENT */
+.content-wrapper {
+    border-left: 1px solid black;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-left: 2em;
+}
+
+/* HEADER */
 
 
-/*
-    FOOTER
-*/
+/* FOOTER */
 footer {
     background-color:bisque;
     padding: 1rem 0;
@@ -136,9 +148,8 @@ footer .social a{
     height: 5%;
     color: gray !important;
 }
-/*
-    MEDIA
-*/
+
+/* MEDIA */
 
 /* Medium devices */
 @media (max-width: 1000px){
