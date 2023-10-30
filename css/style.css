@@ -82,6 +82,19 @@ li{
     border-radius: 50%;
 }
 
+#tech-stack-skills {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.tech-stack-card {
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+}
 
 /*
     HEADER 
