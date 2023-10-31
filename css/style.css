@@ -112,13 +112,17 @@ hr {
 
     display: flex;
     flex-flow: row;
-    gap: 8em;
+    gap: 4em;
 }
 
 .content-wrapper:last-of-type {
     margin-bottom: 0.5rem;
 }
 
+.year {
+    min-width: fit-content;
+    max-width: max-content;
+}
 /* HEADER */
 
 
