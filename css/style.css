@@ -6,7 +6,7 @@
     /* Other custom properties for style.css */
 }
 
-/* MAIN STYLE */
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
@@ -46,23 +46,14 @@ section {
     */
 }
 
-h1 {
-    font-size: 40px;
-}
-
-p, span, li{
-    color: var(--secondaryTextColor);
-    font-size: 1em;
-}
-
 a{
     text-decoration: none;
     color: var(--mainLinkColor);
     font-weight: 500;
 }
 
-li{
-    line-height: 1.9em;
+h1 {
+    font-size: 40px;
 }
 
 hr {
@@ -71,6 +62,11 @@ hr {
     background: #ed1d61;
     font-size: 0;
     border: 0;
+}
+
+p, span, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
 }
 
 /* INTRO SECTION */
@@ -104,12 +100,11 @@ hr {
     align-items: center;
 }
 
-/* GENERAL CONTENT */
-.grid-container {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 1rem;
-    margin-top: 1em;
+/* CAREER/EDUCATION */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
 .content-wrapper {
@@ -117,16 +112,30 @@ hr {
     grid-template-columns: 0.25fr 1fr;
     gap: 1rem;
     align-items: baseline;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ed1d61;
+}
+
+.content-wrapper:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 1em;
+}
+
+.project {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ed1d61;
 }
 
 .project-wrapper {
     margin: 1rem 0;
     display: flex;
     flex-direction: column;
-}
-.project {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #ed1d61;
 }
 
 .year {
@@ -139,11 +148,7 @@ hr {
     font-style: italic
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
+
 /* HEADER */
 
 
@@ -182,22 +187,28 @@ footer .social a{
 }
 
 /* MEDIA */
-
 /* Medium devices */
 @media (max-width: 1000px){
-    .hide-on-medium-dev {
-        display: none;
-    }
+
 
 }
 
 /* Small devices */
-@media (max-width: 600px){
+@media (max-width: 550px){
     #intro {
         flex-direction: column;
     }
 
-    .hide-on-small-dev {
-        display: none;
+    #tech-stack-skills {
+        flex-direction: column;
+    }
+
+    .content-wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 1fr;
+    }
+
+    h1, h2 {
+        text-align: center;
     }
 }
