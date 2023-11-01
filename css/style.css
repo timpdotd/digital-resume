@@ -53,11 +53,11 @@ a{
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -86,8 +86,8 @@ p, span, li{
 }
 
 #profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -109,6 +109,15 @@ p, span, li{
 }
 
 /* CAREER/EDUCATION */
+#load-more {
+    padding: 0.5rem 0.25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -138,6 +147,7 @@ p, span, li{
 .project {
     padding: 0.5rem 0;
     border-bottom: 1px solid #ed1d61;
+    display: none;
 }
 
 .project-wrapper {

@@ -28,3 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
         element.textContent = currentYear;
     });
 });
+
+$(function(){
+    $(".project").slice(0, 4).show(); // select the first ten
+    $("#load-more").click(function(e){ // click event for load more
+        e.preventDefault();
+        $(".project:hidden").show(); // select next 10 hidden divs and show them
+        $("#load-more").hide();
+    });
+});
