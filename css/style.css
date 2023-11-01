@@ -56,6 +56,14 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+    font-size: 30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize;
+}
+
 hr {
     height: 1px;
     color: #ed1d61;
@@ -194,13 +202,19 @@ footer .social a{
 }
 
 /* Small devices */
-@media (max-width: 550px){
+@media (max-width: 625px){
     #intro {
         flex-direction: column;
+        gap: 2em;
     }
 
     #tech-stack-skills {
         flex-direction: column;
+    }
+
+    #profile-pic {
+        width: 250px;
+        height: 250px;
     }
 
     .content-wrapper{
@@ -210,5 +224,29 @@ footer .social a{
 
     h1, h2 {
         text-align: center;
+    }
+}
+
+@media (max-width: 400px){
+    #intro {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    main {
+        padding: 1.5em;
     }
 }
