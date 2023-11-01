@@ -129,17 +129,14 @@ hr {
     border-bottom: 1px solid #ed1d61;
 }
 
-.project:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
 .year {
     min-width: fit-content;
     max-width: max-content;
 
     display: flex;
     flex-direction: column;
+
+    font-style: italic
 }
 /* HEADER */
 
