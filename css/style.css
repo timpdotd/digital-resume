@@ -138,6 +138,12 @@ hr {
 
     font-style: italic
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
 /* HEADER */
 
 
